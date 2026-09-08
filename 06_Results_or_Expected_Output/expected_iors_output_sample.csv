@@ -1,0 +1,4 @@
+case_id,NIST_CSF_score_technical_only,OCTAVE_Allegro_score_technical_only,Proposed_IORS_score,risk_indicators_captured_NIST,risk_indicators_captured_OCTAVE,risk_indicators_captured_IORS
+CASE-01,0.72,0.70,0.69,1,1,2
+CASE-02,0.68,0.66,0.62,1,1,2
+CASE-03,0.90,0.88,0.68,1,1,2
