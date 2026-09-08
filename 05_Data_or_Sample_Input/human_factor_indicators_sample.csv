@@ -1,0 +1,7 @@
+case_id,indicator_type,indicator_name,value,unit,source
+CASE-01,Human-Factor,Security Fatigue Level,High,Likert (Low/Med/High),Nobles (2022)
+CASE-01,Human-Factor,Burnout Indicator,Elevated,qualitative rating,Nobles (2022)
+CASE-02,Human-Factor,Awareness Score,3.2,Likert scale 1-5,Shah et al. (2023)
+CASE-02,Human-Factor,Cross-Cultural Awareness Variance,Significant,qualitative rating,Shah et al. (2023)
+CASE-03,Human-Factor,Self-Reported Behavioural Reliability,Low,qualitative rating,Alharbi (2023)
+CASE-03,Human-Factor,Legal/Compliance Awareness Effectiveness,Moderate,qualitative rating,Sharifi et al. (2024)

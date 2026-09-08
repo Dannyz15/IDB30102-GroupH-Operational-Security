@@ -1,0 +1,4 @@
+case_id,technical_score_normalised,human_factor_score_normalised,notes
+CASE-01,0.72,0.65,High vulnerability count + high security fatigue -- candidate for IORS demonstration
+CASE-02,0.68,0.55,Moderate technical exposure + inconsistent cross-cultural awareness
+CASE-03,0.90,0.40,High technical detection accuracy but low behavioural-data reliability

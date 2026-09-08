@@ -1,0 +1,7 @@
+case_id,indicator_type,indicator_name,value,unit,source
+CASE-01,Technical,Vulnerability Count,600,count,Perdana et al. (2022)
+CASE-01,Technical,Maturity Score,72.43,percent,Perdana et al. (2022)
+CASE-02,Technical,Threat Exposure Probability,0.68,probability (0-1),Zahran et al. (2026)
+CASE-02,Technical,Control Maturity Score,65.00,percent,Zahran et al. (2026)
+CASE-03,Technical,Fuzzy Risk Ranking Accuracy,90.00,percent,Noor et al. (2025)
+CASE-03,Technical,Attack-Graph Probability,0.54,probability (0-1),Yang et al. (2025)
