@@ -23,7 +23,7 @@ format.
 | **Year** | 2022 |
 | **Research Problem** | Assess an academic information system's security posture and risk using a compliance framework. |
 | **Method / Technique** | NIST SP 800-26 control assessment combined with SP 800-30 risk stages; Acunetix vulnerability scanning. |
-| **Dataset / Tools** | 40-respondent survey (rectorate/faculty/IT) plus an automated scan of Universitas Sangga Buana's system. |
+| **Dataset / Tools** | 40 respondent survey (rectorate/faculty/IT) plus an automated scan of Universitas Sangga Buana's system. |
 | **Main Findings** | 72.43% control maturity (Level 3 - Implemented Procedures); 600 vulnerabilities found (4 high, 40 medium, 13 low, 543 informational). |
 | **Limitation** | Single institution, subjective self-report survey, no re-assessment over time; training effectiveness untested. |
 | **Relevance to Proposed Research** | Baseline example of a purely technical/compliance risk score with no human-factor dimension - motivates Theme 1 vs Theme 2 divide. |
