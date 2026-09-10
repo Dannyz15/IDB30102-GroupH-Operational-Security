@@ -1,0 +1,5 @@
+risk_area,indicator_name,reference_value,unit,source
+Access Control,Vulnerability Count,600,count,Perdana et al. (2022)
+Access Control,Maturity Score,72.43,percent,Perdana et al. (2022)
+Patch Management,Threat Exposure Probability,0.68,probability (0-1),Zahran et al. (2026)
+Phishing,Attack-Graph Probability,0.54,probability (0-1),Yang et al. (2025)

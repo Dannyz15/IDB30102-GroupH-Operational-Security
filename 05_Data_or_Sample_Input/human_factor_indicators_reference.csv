@@ -1,0 +1,5 @@
+risk_area,indicator_name,reference_value,unit,source
+Phishing,Security Fatigue Level,High,Likert (Low/Med/High),Nobles (2022)
+Data Handling,Awareness Score,3.2,Likert scale 1-5,Shah et al. (2023)
+Access Control,Burnout Indicator,Elevated,qualitative rating,Nobles (2022)
+Patch Management,Self-Reported Behavioural Reliability,Low,qualitative rating,Alharbi (2023)

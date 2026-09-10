@@ -2,41 +2,47 @@
 
 ## Overview
 
-As confirmed by the course lecturer, this proposal-stage submission does **not** require a
-complete working system. The expected output for this research area is a **comparative
-analysis** rather than experimental results from a built system. This folder therefore contains
-**illustrative / expected outputs only**, generated from the sample case-scenario input in
-`05_Data_or_Sample_Input/`, to demonstrate the intended output format of the proposed
-Integrated Operational Risk Score (IORS) framework (Chapter 3, Section 3.6, Figure 3.1).
+Since the Development Model is now **Prototyping** (Chapter 3, Section 3.3) and a working
+preliminary tool has been built (`04_Source_Code/integrated_risk_assessment.py`), this folder
+contains the **actual output produced by running that prototype** on the sample input in
+`05_Data_or_Sample_Input/prototype_input_sample.csv`, rather than purely hypothetical
+figures. This demonstrates the technical feasibility of the proposed Integrated Operational
+Risk Score (IORS) approach at proof-of-concept level, consistent with the proposal-stage
+scope (Chapter 1, Section 1.6) -- no live or organisational deployment is involved.
 
-## Expected Output Description
+## How this output was generated
 
-The proposed framework combines the technical and human-factor indicator layers through
-an Indicator Normalisation and Weighting Engine (Chapter 3, Section 3.5, Phase 3) to produce
-a single **Integrated Operational Risk Score (IORS)** per case. This IORS is then benchmarked
-against two single-dimension baseline frameworks identified in Chapter 2:
-
-- **NIST CSF** (technical-only scoring)
-- **OCTAVE Allegro** (technical-only scoring)
+Running the prototype (`python integrated_risk_assessment.py`) with the four sample risk
+areas produces an Integrated Risk Score per area (`R_overall = wT*R_T + wH*R_H`, with
+wT = wH = 0.5), a priority classification (High / Medium / Low), and recommended controls
+per area. The console report, CSV and JSON outputs below are the direct, unedited output of
+that run.
 
 ## Files in this folder
 
 | File | Description |
 |---|---|
-| `expected_iors_output_sample.csv` | Illustrative IORS output per case, compared against the two single-dimension baselines |
-| `evaluation_metrics_summary.md` | Description of the three evaluation metrics used to assess the framework (Chapter 3, Section 3.10) |
+| `risk_report.csv` | Actual prototype output -- integrated risk score, priority and recommended controls per risk area |
+| `risk_report.json` | Same output in JSON format |
+| `console_report_sample.txt` | Console report output from running the prototype |
+| `comparison_vs_baseline.md` | Comparison of the prototype's integrated scoring approach against single-dimension baselines (NIST CSF, OCTAVE Allegro), per the Evaluation Plan (Chapter 3, Section 3.9) |
+| `evaluation_metrics_summary.md` | Description of the three evaluation metrics used to assess the framework (Chapter 3, Section 3.9) |
 
-## Evaluation Metrics (summary)
+## Sample Result (from actual prototype run)
 
-1. **Risk-Coverage Comprehensiveness** — number/type of risk indicators captured by IORS vs. baseline
-2. **Granularity** — ability to distinguish risk levels across combined technical + human-factor dimensions
-3. **Comparative Consistency** — whether IORS outputs align sensibly with case-scenario evidence
+| Risk Area | Technical | Human | Integrated | Priority |
+|---|---|---|---|---|
+| Access Control | 75% | 60% | 67.5% | High |
+| Phishing | 45% | 85% | 65.0% | High |
+| Data Handling | 40% | 75% | 57.5% | Medium |
+| Patch Management | 80% | 30% | 55.0% | Medium |
 
-Full detail is provided in Chapter 3, Section 3.10 (Proposed Evaluation Plan) of the Research
-Proposal.
+Note that Phishing ranks as **High** priority under the integrated score despite a
+comparatively low technical score (45%) -- a distinction a technical-only baseline (e.g., NIST
+CSF scoring on technical indicators alone) would miss, illustrating the added value of
+combining both dimensions (Research Objective 3).
 
 ## Note
 
-Figures in this folder are **expected/illustrative outputs**, not final experimental results,
-consistent with the proposal-stage scope and lecturer's clarification that a complete system
-is not required.
+This is preliminary, proof-of-concept output from a prototype-stage tool, not a validated
+production system, consistent with the proposal-stage scope defined in Chapter 1.

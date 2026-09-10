@@ -1,0 +1,34 @@
+Integrated Operational Security Risk Report — Sample Organisation
+============================================================
+Formula: R_overall = wT*R_T + wH*R_H (wT=0.5, wH=0.5)
+
+Risk Area            Technical     Human  Integrated  Priority
+--------------------------------------------------------------
+Access Control             75%       60%       67.5%      High
+Phishing                   45%       85%       65.0%      High
+Data Handling              40%       75%       57.5%    Medium
+Patch Management           80%       30%       55.0%    Medium
+
+Recommended Controls (by priority):
+
+[High] Access Control (67.5%)
+  - Enforce multi-factor authentication (MFA)
+  - Apply least-privilege role-based access control
+  - Conduct quarterly access rights review
+
+[High] Phishing (65.0%)
+  - Run recurring phishing simulation & awareness training
+  - Deploy email authentication (SPF/DKIM/DMARC)
+  - Enable click-time URL protection
+
+[Medium] Data Handling (57.5%)
+  - Classify and label data by sensitivity
+  - Enforce DLP (Data Loss Prevention) policies
+  - Mandatory data-handling training for staff
+
+[Medium] Patch Management (55.0%)
+  - Automate patch deployment with staged rollout
+  - Maintain an asset/vulnerability inventory (CMDB)
+  - Set SLA for critical patch application (e.g. 72 hours)
+
+Saved: risk_report.csv, risk_report.json

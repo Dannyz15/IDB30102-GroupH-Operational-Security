@@ -1,0 +1,5 @@
+Risk Area,Technical Risk (%),Human Risk (%),Integrated Risk (%),Priority,Recommended Controls
+Access Control,75,60,67.5,High,Enforce multi-factor authentication (MFA); Apply least-privilege role-based access control; Conduct quarterly access rights review
+Phishing,45,85,65.0,High,Run recurring phishing simulation & awareness training; Deploy email authentication (SPF/DKIM/DMARC); Enable click-time URL protection
+Data Handling,40,75,57.5,Medium,Classify and label data by sensitivity; Enforce DLP (Data Loss Prevention) policies; Mandatory data-handling training for staff
+Patch Management,80,30,55.0,Medium,Automate patch deployment with staged rollout; Maintain an asset/vulnerability inventory (CMDB); Set SLA for critical patch application (e.g. 72 hours)

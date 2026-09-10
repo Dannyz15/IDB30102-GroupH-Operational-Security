@@ -2,44 +2,46 @@
 
 ## Overview
 
-This research does not use a live, primary, or organisational dataset. Consistent with the
-Scope of the Research (Chapter 1, Section 1.6) and the selected Threat Modelling and Risk
-Assessment methodology (Chapter 3, Section 3.2), all input data is **secondary**, drawn from
-the 40 peer-reviewed studies screened and catalogued in the group's Systematic Literature
-Review (Assignment 1). No primary data collection from human respondents or live systems
-is conducted.
+With the Development Model now set to **Prototyping** (Chapter 3, Section 3.3), a working
+preliminary tool has been developed (see `04_Source_Code/`) that takes technical and
+human-factor risk scores as input and computes an Integrated Operational Risk Score (IORS)
+for each risk area. This folder contains the sample input consumed by that prototype, plus
+the secondary-literature indicator categories that informed how the input values were
+derived.
 
-Two parallel indicator layers are extracted from this secondary evidence base, consistent
-with the architecture presented in Chapter 3 (Figure 3.1):
-
-1. **Technical Indicator Layer** — vulnerability counts / CVSS scores, control maturity scores,
-   attack-graph / threat-exposure probabilities
-2. **Human-Factor Indicator Layer** — security awareness scores, stress / burnout indicators,
-   self-reported behavioural data
+Consistent with the Scope of the Research (Chapter 1, Section 1.6), no live or organisational
+data is used. All input values are illustrative, constructed from the technical and
+human-factor indicator layers identified in the group's Systematic Literature Review
+(Assignment 1) and presented in Figure 3.1.
 
 ## Files in this folder
 
 | File | Description |
 |---|---|
-| `technical_indicators_sample.csv` | Illustrative technical risk indicators, format based on figures reported in Perdana et al. (2022) and Zahran et al. (2026) |
-| `human_factor_indicators_sample.csv` | Illustrative human-factor risk indicators, format based on constructs in Nobles (2022) and Shah et al. (2023) |
-| `case_scenario_input.csv` | Combined case-scenario input table used as illustrative input to the Indicator Normalisation and Weighting Engine (Chapter 3, Section 3.8, Stage 2) |
+| `prototype_input_sample.csv` | Sample input in the exact schema consumed by the prototype (`04_Source_Code/integrated_risk_assessment.py`) -- risk area name, technical risk score (0-100), human-factor risk score (0-100) |
+| `technical_indicators_reference.csv` | Technical risk indicator categories and format drawn from the literature (Perdana et al., 2022; Zahran et al., 2026), used to inform realistic technical_risk values |
+| `human_factor_indicators_reference.csv` | Human-factor risk indicator categories and format drawn from the literature (Nobles, 2022; Shah et al., 2023), used to inform realistic human_risk values |
+
+## Input Schema (matches `RiskArea` in the prototype)
+
+| Field | Type | Description |
+|---|---|---|
+| `name` | text | Risk area label (e.g., Access Control, Phishing, Patch Management, Data Handling) |
+| `technical_risk` | 0-100 | Technical vulnerability/exposure score for this risk area |
+| `human_risk` | 0-100 | Human-factor (awareness/stress/fatigue) score for this risk area |
 
 ## Original Data Sources
 
-- Perdana, A., et al. (2022). NIST SP 800-26/800-30 based maturity assessment. *(secondary
-  figures used: vulnerability count, maturity score)*
-- Zahran, M., et al. (2026). OCTAVE Allegro / ISO 27k simulation-based risk assessment for
-  IT/OT environments. *(secondary figures used: risk simulation output)*
-- Nobles, C. (2022). Human performance taxonomy — stress, burnout, security fatigue.
-  *(construct basis for human-factor indicator categories)*
-- Shah, F., et al. (2023). Cross-cultural security awareness survey (UAE/USA).
-  *(construct basis for awareness scoring format)*
+- Perdana, A., et al. (2022). NIST SP 800-26/800-30 based maturity assessment -- basis for
+  technical_risk scaling
+- Nobles, C. (2022). Human performance taxonomy -- stress, burnout, security fatigue -- basis
+  for human_risk scaling
+- Shah, F., et al. (2023). Cross-cultural security awareness survey -- basis for awareness
+  scoring format
 
-Full citation details are provided in `07_References/`.
+Full citation details are in `07_References/`.
 
 ## Note
 
-No confidential, private, or organisation-identifying data is included in this folder. All figures
-are illustrative, constructed from openly published findings for demonstration purposes only,
-consistent with the proposal-stage scope defined in Chapter 1.
+Input values are illustrative and proposal-stage only, in line with Chapter 1 Scope (Section
+1.6): no live or organisation-identifying data is included.

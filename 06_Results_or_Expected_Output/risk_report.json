@@ -1,0 +1,50 @@
+[
+  {
+    "risk_area": "Access Control",
+    "technical_risk": 75,
+    "human_risk": 60,
+    "integrated_risk": 67.5,
+    "priority": "High",
+    "recommended_controls": [
+      "Enforce multi-factor authentication (MFA)",
+      "Apply least-privilege role-based access control",
+      "Conduct quarterly access rights review"
+    ]
+  },
+  {
+    "risk_area": "Phishing",
+    "technical_risk": 45,
+    "human_risk": 85,
+    "integrated_risk": 65.0,
+    "priority": "High",
+    "recommended_controls": [
+      "Run recurring phishing simulation & awareness training",
+      "Deploy email authentication (SPF/DKIM/DMARC)",
+      "Enable click-time URL protection"
+    ]
+  },
+  {
+    "risk_area": "Data Handling",
+    "technical_risk": 40,
+    "human_risk": 75,
+    "integrated_risk": 57.5,
+    "priority": "Medium",
+    "recommended_controls": [
+      "Classify and label data by sensitivity",
+      "Enforce DLP (Data Loss Prevention) policies",
+      "Mandatory data-handling training for staff"
+    ]
+  },
+  {
+    "risk_area": "Patch Management",
+    "technical_risk": 80,
+    "human_risk": 30,
+    "integrated_risk": 55.0,
+    "priority": "Medium",
+    "recommended_controls": [
+      "Automate patch deployment with staged rollout",
+      "Maintain an asset/vulnerability inventory (CMDB)",
+      "Set SLA for critical patch application (e.g. 72 hours)"
+    ]
+  }
+]
