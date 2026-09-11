@@ -51,7 +51,7 @@ This repository contains both research/design materials and a working prototype 
 ## Instructions for Executing Preliminary Code
 1. Ensure Python 3.x is installed.
 2. Navigate to `04_Source_Code/`.
-3. Run the script directly, e.g. `python risk_assessment.py`, to see example `RiskArea` objects normalised and scored via `IntegratedRiskAssessment`.
+3. Run the script directly, e.g. `integrated_risk_assessment.py`, to see example `RiskArea` objects normalised and scored via `IntegratedRiskAssessment`.
 4. No external dependencies or installation steps are required - the prototype uses only Python's standard library.
 
 ## Repository Structure
